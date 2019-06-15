@@ -8,3 +8,7 @@ RUN apk add git && \
   rm -f hugo_${VERSION}_linux-64bit.tar.gz && \
   mv hugo /usr/local/bin/hugo
 
+COPY entrypoint.sh ./entrypoint.sh
+
+ENTRYPOINT ./entrypoint.sh
+
