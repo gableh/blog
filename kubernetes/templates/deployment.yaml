@@ -4,6 +4,9 @@ metadata:
   name: blog-deployment
   labels:
     app: blog
+  annotations:
+    checksum: {{ randAlphaNum 10 | quote }}
+
 spec:
   replicas: 1
   selector:

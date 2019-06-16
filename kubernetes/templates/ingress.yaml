@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: blog-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+    certmanager.k8s.io/acme-challenge-type: http01
+spec:
+  tls:
+    - hosts:
+        - www.gable.dev
+        - gable.dev
+      secretName: tls
+  rules:
+    - host: www.gable.dev
+      http:
+        paths:
+          - path: "/"
+            backend:
+              serviceName: blog-service
+              servicePort: 80
+    - host: gable.dev
+      http:
+        paths:
+          - path: "/"
+            backend:
+              serviceName: blog-service
+              servicePort: 80
