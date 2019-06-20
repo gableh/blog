@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Gable's Blog"
 theme = "kube"
 Paginate = 4
+googleAnalytics = "UA-142478349-1"
+
 [Params]
   RSSLink = "/index.xml"
   author = "gableh" # add your company name
