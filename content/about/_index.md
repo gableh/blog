@@ -1,5 +1,10 @@
 +++
 draft= false
 title = "About me!"
-description = ':)'
 +++
+
+Hi! I'm Gable! Currently learning about functional programming and devops.
+
+
+
+

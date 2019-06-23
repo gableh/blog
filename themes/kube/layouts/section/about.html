@@ -5,10 +5,19 @@
 
 <div id="hero" class="wrap">
     <h1>{{.Title }}</h1>
-    <p>{{.Params.description}}<br></p>
-</div>
-<div id="kube-faq">
     {{.Content}}
+    <br>
+    <div class="is-container-row">
+        <a class="external-link"href="https://github.com/gableh">
+            {{partial "svg/github.svg" (dict "width" 50 "height" 50 )}}
+        </a>
+        <a class="external-link" href="https://www.linkedin.com/in/gable-heng/">
+            {{partial "svg/linkedin.svg" (dict "width" 50 "height" 50 )}}
+        </a>
+        <a class="external-link" href="mailto:me@gableh.com">
+            {{partial "svg/contact.svg" (dict "width" 50 "height" 50 )}}
+        </a>
+    </div>
 </div>
 {{ end }}
 {{ define "footer" }}

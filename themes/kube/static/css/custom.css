@@ -1,0 +1,9 @@
+.external-link {
+     fill: #3794de;
+     text-decoration: none;
+ }
+
+.external-link:hover {
+    fill: #f03c69;
+    text-decoration: none;
+}
