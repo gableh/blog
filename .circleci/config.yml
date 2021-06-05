@@ -14,5 +14,5 @@ jobs:
     steps:
       - add_ssh_keys
       - run: |
-          echo 'gableh.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMekIG7tuPPH+vfAMgG+LNij/b03kt7ao7kGEaSeb54A ci-user@racknerd-eed054' >> ~/.ssh/known_hosts
+          echo 'gableh.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDea8rG5gUWoOWhLMIZq9CTLnIwB4gCzI+LEdrAb5WHsSHWimxSKQz74ivTZ8u3yozHcfAY0yRoctlPnhs1YH0cAT7EqoA5pG9BZ9iqgLZ2FC1WpanHc3qS29/Ny8nhWZ8yIICp5W+O/99Ib4fbjM2e/W+hSQhipN0Q4SOGuw0MJwajtWRTXv9UnzqEZ6P+54no/t4I3+Kcgp/wb7DgnNbXe0ZOwXP2hNXWPbLsaCKBJ+gNegKL1tJDkKx0jiEMGIx1lOtURiFNjgXQNUC4yrMj3PMG5kczY5h/HgshBiI/7PgeCzABPSheMxAuhUVX37pW0p8Ei5kGORTQQGHjnQ6T' >> ~/.ssh/known_hosts
           ssh $VM_USER@gableh.com "cd blog && docker-compose restart"
