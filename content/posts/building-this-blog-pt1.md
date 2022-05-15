@@ -2,7 +2,6 @@
 title = "Building this Blog - Part 1"
 description = "Setting up a single node cluster"
 date = 2019-06-23T21:28:05+08:00
-weight = 20
 draft = false
 +++
 

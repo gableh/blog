@@ -2,7 +2,6 @@
 title = "Building this Blog - Part 2"
 description = "Static site generators and Continuous Delivery"
 date = 2019-06-24T10:34:05+08:00
-weight = 20
 draft = false
 +++
 
